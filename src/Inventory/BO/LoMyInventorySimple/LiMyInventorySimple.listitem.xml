@@ -1,0 +1,7 @@
+<ListItem name="LiMyInventorySimple">
+  <SimpleProperties>
+    <SimpleProperty name="ivcMainPKey" type="DomPKey"    storable="false" dataSourceProperty="ivcMainPKey"/>
+    <SimpleProperty name="productName" type="DomString"  storable="false" dataSourceProperty="productName"/>
+    <!-- <SimpleProperty name="balance"     type="DomDecimal" storable="false" dataSourceProperty="balance"/> -->
+  </SimpleProperties>
+</ListItem>

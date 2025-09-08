@@ -1,0 +1,16 @@
+<DataSource name="MyDsInventorySimple"
+            backendSystem="sf"
+            businessObjectClass="BoProduct"
+            external="true"
+            readOnly="true"
+            schemaVersion="2.0">
+
+  <Attributes>
+    <Attribute name="ivcMainPKey"  table="Inventory__c" column="Id"/>
+    <Attribute name="product"      table="Inventory__c" column="Product__c"/>
+  </Attributes>
+
+  <Entities>
+    <Entity name="Inventory__c" alias="" idAttribute="Id"/>
+  </Entities>
+</DataSource>

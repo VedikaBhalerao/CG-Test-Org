@@ -1,0 +1,164 @@
+<!-- <UIDescription name="MyInventory::ProductSummaryUI" schemaVersion="0.0.0.5">
+  <Page pagePattern="SingleSectionPage">
+    <PageHeader>
+      <Bindings>
+        <Resource target="title" type="Label" id="ShowInventoryTitle" defaultLabel="Inventory" />
+      </Bindings>
+    </PageHeader>
+
+
+    <Section sectionName="masterSection" sectionPattern="SingleAreaSection">
+      <Area areaName="mainArea" areaPattern="SingleElementArea">
+
+      </Area>
+    </Section>
+  </Page>
+</UIDescription> -->
+
+<UIDescription name="MyInventory::ProductSummaryUI" schemaVersion="0.0.0.5">
+  <Page pagePattern="SingleSectionPage">
+    <PageHeader>
+      <Bindings>
+        <Resource target="title" type="Label" id="InvTitle" defaultLabel="Inventory"/>
+      </Bindings>
+    </PageHeader>
+
+    <Section sectionName="masterSection" sectionPattern="SingleAreaSection">
+      <Area areaName="main" areaPattern="SingleElementArea">
+
+       <!-- Product Name (visually bold using Unicode) -->
+<InputArea name="P1_Name" disabled="true">
+  <Bindings>
+    <Resource target="Value" type="Label"
+      defaultLabel="Product: Multi-Grain Bread"/>
+  </Bindings>
+</InputArea>
+
+<!-- Category -->
+<InputArea name="P1_Category" disabled="true">
+  <Bindings>
+    <Resource target="Value" type="Label" defaultLabel="Category: Breads"/>
+  </Bindings>
+</InputArea>
+
+<!-- Stock / Consumed / Available -->
+<InputArea name="P1_Stock" disabled="true">
+  <Bindings><Resource target="Value" type="Label" defaultLabel="Stock: 150"/></Bindings>
+</InputArea>
+<InputArea name="P1_Consumed" disabled="true">
+  <Bindings><Resource target="Value" type="Label" defaultLabel="Consumed: 50"/></Bindings>
+</InputArea>
+<InputArea name="P1_Available" disabled="true">
+  <Bindings><Resource target="Value" type="Label" defaultLabel="Available: 100"/></Bindings>
+</InputArea>
+
+<!-- Separator -->
+<InputArea name="P1_Separator" disabled="true">
+  <Bindings>
+    <Resource target="Value" type="Label" defaultLabel="──────────────────────────────────────"/>
+  </Bindings>
+</InputArea>
+
+<InputArea name="P1_Name" disabled="true">
+  <Bindings>
+    <Resource target="Value" type="Label"
+      defaultLabel="Product:  Fish Bun"/>
+  </Bindings>
+</InputArea>
+
+<!-- Category -->
+<InputArea name="P1_Category" disabled="true">
+  <Bindings>
+    <Resource target="Value" type="Label" defaultLabel="Category: Frozen Items"/>
+  </Bindings>
+</InputArea>
+
+<!-- Stock / Consumed / Available -->
+<InputArea name="P1_Stock" disabled="true">
+  <Bindings><Resource target="Value" type="Label" defaultLabel="Stock: 160"/></Bindings>
+</InputArea>
+<InputArea name="P1_Consumed" disabled="true">
+  <Bindings><Resource target="Value" type="Label" defaultLabel="Consumed: 60"/></Bindings>
+</InputArea>
+<InputArea name="P1_Available" disabled="true">
+  <Bindings><Resource target="Value" type="Label" defaultLabel="Available: 100"/></Bindings>
+</InputArea>
+
+<!-- Separator -->
+<InputArea name="P1_Separator" disabled="true">
+  <Bindings>
+    <Resource target="Value" type="Label" defaultLabel="──────────────────────────────────────"/>
+  </Bindings>
+</InputArea>
+<!-- ===== Product 2 ===== -->
+<InputArea name="P2_Name" disabled="true">
+  <Bindings>
+    <!-- bold-looking product name -->
+    <Resource target="Value" type="Label" defaultLabel="Product: Seeni Sambol Bun(Mini)"/>
+  </Bindings>
+</InputArea>
+<InputArea name="P2_Category" disabled="true">
+  <Bindings>
+    <Resource target="Value" type="Label" defaultLabel="Category: Frozen Items"/>
+  </Bindings>
+</InputArea>
+<InputArea name="P2_Stock" disabled="true">
+  <Bindings>
+    <Resource target="Value" type="Label" defaultLabel="Stock: 200"/>
+  </Bindings>
+</InputArea>
+<InputArea name="P2_Consumed" disabled="true">
+  <Bindings>
+    <Resource target="Value" type="Label" defaultLabel="Consumed: 120"/>
+  </Bindings>
+</InputArea>
+<InputArea name="P2_Available" disabled="true">
+  <Bindings>
+    <Resource target="Value" type="Label" defaultLabel="Available: 80"/>
+  </Bindings>
+</InputArea>
+<!-- separator -->
+<InputArea name="P2_Separator" disabled="true">
+  <Bindings>
+    <Resource target="Value" type="Label" defaultLabel="──────────────────────────────────────"/>
+  </Bindings>
+</InputArea>
+
+<!-- ===== Product 3 ===== -->
+<InputArea name="P3_Name" disabled="true">
+  <Bindings>
+    <!-- bold-looking product name -->
+    <Resource target="Value" type="Label" defaultLabel="Product: Puff Pastry Sheet"/>
+  </Bindings>
+</InputArea>
+<InputArea name="P3_Category" disabled="true">
+  <Bindings>
+    <Resource target="Value" type="Label" defaultLabel="Category: Frozen Items"/>
+  </Bindings>
+</InputArea>
+<InputArea name="P3_Stock" disabled="true">
+  <Bindings>
+    <Resource target="Value" type="Label" defaultLabel="Stock: 90"/>
+  </Bindings>
+</InputArea>
+<InputArea name="P3_Consumed" disabled="true">
+  <Bindings>
+    <Resource target="Value" type="Label" defaultLabel="Consumed: 20"/>
+  </Bindings>
+</InputArea>
+<InputArea name="P3_Available" disabled="true">
+  <Bindings>
+    <Resource target="Value" type="Label" defaultLabel="Available: 70"/>
+  </Bindings>
+</InputArea>
+<!-- separator -->
+<InputArea name="P3_Separator" disabled="true">
+  <Bindings>
+    <Resource target="Value" type="Label" defaultLabel="──────────────────────────────────────"/>
+  </Bindings>
+</InputArea>
+
+      </Area>
+    </Section>
+  </Page>
+</UIDescription>

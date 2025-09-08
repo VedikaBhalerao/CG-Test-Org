@@ -1,0 +1,7 @@
+<ListObject name="LoMyInventorySimple" generateLoadMethod="false" paging="true">
+  <DataSource name="MyDsInventorySimple"/>
+  <Item objectClass="LiMyInventorySimple"/>
+  <Methods>
+    <Method name="loadAsync"/>
+  </Methods>
+</ListObject>
