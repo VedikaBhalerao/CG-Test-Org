@@ -102,7 +102,7 @@ if (me.isCallCompletion()) {
       var dStopDate = Utils.convertAnsiDate2Date(stopDate);
       var stopTime = Utils.convertTime2Ansi(dStopDate);
 
-      me.setDurationEffective(me.getCallDuration(startDate, startTime, stopDate, stopTime));
+      me.setDuration(me.getCallDuration(startDate, startTime, stopDate, stopTime));
 
       //Update TimeFrom, TimeThru, Duration
       if (me.getLuCallMeta().getUpdatePlannedTimes() == "1") {
