@@ -9,6 +9,7 @@
   <!-- ####################################################################################################### -->
   <Translations>
     <Framework>
+      <!--Added by vedika//Added by vedika-->
       <Label id="Yes" text="Yes" translationStatus="7"/>
       <Label id="No" text="No" translationStatus="7"/>
       <Label id="Cancel" text="Cancel" translationStatus="7"/>
