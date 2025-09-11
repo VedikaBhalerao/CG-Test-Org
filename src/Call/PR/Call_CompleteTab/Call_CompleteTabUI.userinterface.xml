@@ -182,6 +182,12 @@
               <Binding target="Value" binding="ProcessContext::MainBO.durationEffective" bindingMode="ONE_WAY" />
             </Bindings>
           </InputArea>
+          <InputArea name="durationPlanned" disabled="true">
+            <Bindings>
+              <Resource target="Label" type="Label" defaultLabel="Planned Duration" id="durationPlannedId" />
+              <Binding target="Value" binding="ProcessContext::MainBO.duration" bindingMode="ONE_WAY" />
+            </Bindings>
+          </InputArea>
         </GroupElement>
         <GroupElement name="Summary">
           <Bindings>
