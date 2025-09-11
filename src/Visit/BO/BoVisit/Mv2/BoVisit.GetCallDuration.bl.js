@@ -52,7 +52,7 @@ function getCallDuration(dateFrom, timeFrom, dateThru, timeThru){
     ///////////////////////////////////////////////////////////////////////////////////////////////
     
 var duration = 0;
-
+//add comment
 var isValid = function (date)
 {
   return Utils.isDefined(date) && !Utils.isEmptyString(date);
