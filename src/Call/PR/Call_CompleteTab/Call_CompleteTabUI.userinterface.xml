@@ -178,13 +178,13 @@
           </Merger>
           <InputArea name="durationEffective" disabled="true">
             <Bindings>
-              <Resource target="Label" type="Label" defaultLabel="Duration Effective" id="durationEffectiveId" />
+              <Resource target="Label" type="Label" defaultLabel="Duration Effective (Actual)" id="durationEffectiveId" />
               <Binding target="Value" binding="ProcessContext::MainBO.durationEffective" bindingMode="ONE_WAY" />
             </Bindings>
           </InputArea>
           <InputArea name="durationPlanned" disabled="true">
             <Bindings>
-              <Resource target="Label" type="Label" defaultLabel="Planned Duration" id="durationPlannedId" />
+              <Resource target="Label" type="Label" defaultLabel="Duration Planned (Minutes)" id="durationPlannedId" />
               <Binding target="Value" binding="ProcessContext::MainBO.duration" bindingMode="ONE_WAY" />
             </Bindings>
           </InputArea>
