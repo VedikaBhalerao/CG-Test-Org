@@ -106,8 +106,16 @@
         <TransitionTo action="IsCallCompleted" />
       </Action>
       <Action name="IsCallCompleted" actionType="DECISION" parameter="ProcessContext::Completed">
-        <Case value="1" action="EndComplete" />
+        <Case value="1" action="ReloadOrderInfoAfterComplete" />
         <CaseElse action="ShowCallDetail" />
+      </Action>
+      <!-- Reload OrderInfo after completion to refresh summary -->
+      <Action actionType="LOAD" name="ReloadOrderInfoAfterComplete" type="LuCallOrderInfo">
+        <Parameters>
+          <Input name="clbMainPKey" value="ProcessContext::MainBO.pKey" />
+        </Parameters>
+        <Return name="ProcessContext::OrderInfo" />
+        <TransitionTo action="EndComplete" />
       </Action>
       <!-- Actions for Responsible Lookup -->
       <Action actionType="PROCESS" name="OpenResponsibleLookup" process="User::LookupProcess">

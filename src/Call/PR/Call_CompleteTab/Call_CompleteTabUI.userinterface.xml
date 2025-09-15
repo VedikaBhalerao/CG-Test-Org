@@ -235,6 +235,24 @@
             </SelectionBox>
           </Merger>
         </GroupElement>
+        <!-- Added Latitude/Longitude from Customer Info after Summary, before Customer section -->
+        <Merger name="LatLong" pattern="twoInputControls" labelHandling="Own" leftRatio="1" rightRatio="1" disabled="true">
+          <Bindings>
+            <Resource target="Label" type="Label" defaultLabel="Latitude / Longitude" id="LatLongId" />
+          </Bindings>
+          <InputArea name="Latitude" disabled="true">
+            <Bindings>
+              <Resource target="Label" type="Label" defaultLabel="Latitude" id="LatitudeId" />
+              <Binding target="Value" binding="ProcessContext::MainBO.luCustomer.latitude" bindingMode="ONE_WAY" />
+            </Bindings>
+          </InputArea>
+          <InputArea name="Longitude" disabled="true">
+            <Bindings>
+              <Resource target="Label" type="Label" defaultLabel="Longitude" id="LongitudeId" />
+              <Binding target="Value" binding="ProcessContext::MainBO.luCustomer.longitude" bindingMode="ONE_WAY" />
+            </Bindings>
+          </InputArea>
+        </Merger>
         <GroupElement name="CustomerInfoGroup">
           <Bindings>
             <Resource target="Title" type="Label" id="Customer" defaultLabel="Customer" />
